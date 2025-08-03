@@ -9,4 +9,4 @@ help: ## Lista de comandos
 .DEFAULT_GOAL := help
 
 build: ## Cria a imagem
-	@docker build -t lua-load-balancer:test .
+	@docker build -t lua-nginx-loadbalancer:test .

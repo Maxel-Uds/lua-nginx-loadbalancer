@@ -35,4 +35,4 @@ jobs:
       - name: Push Docker Image
         run: |
           TAG=${{ steps.generate_tag.outputs.tag }}
-          docker push suntzu12//lua-nginx-loadbalancer:$TAG
+          docker push suntzu12/lua-nginx-loadbalancer:$TAG
