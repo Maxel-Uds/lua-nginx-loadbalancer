@@ -30,7 +30,7 @@ jobs:
         run: |
           TAG=${{ steps.generate_tag.outputs.tag }}
           echo "Building Docker image with tag: $TAG"
-          docker build -t suntzu12/lua-load-balancer:$TAG -f docker/nginx/Dockerfile docker/nginx
+          docker build -t suntzu12/lua-load-balancer:$TAG .
 
       - name: Push Docker Image
         run: |
